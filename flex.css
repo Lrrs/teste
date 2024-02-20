@@ -1,0 +1,224 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #c3c9d0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.fichierCSV{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.block {
+    width: 600px;
+    height: 600px;
+    background-color: lightblue;
+    border-radius: 20px; /* Arrondit les coins */
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    align-items: center;
+    
+}
+
+.file_ {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 24px;
+
+  
+}
+
+
+.toggle1{
+
+  position: relative;
+  top:-20px;
+  left: 100;
+  margin-bottom: 20px;
+  width: 2px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 30px;
+
+  cursor: pointer;
+
+
+}
+
+.toggle2{
+  
+
+  cursor: pointer;
+
+  width: 25px;
+  height: 20px;
+  font-weight: bold;
+  color: #430404;
+  margin-right: 10px; /* Ajoutez une marge entre les éléments */
+  
+
+}
+
+
+#entete {
+  display: flex;
+  justify-content: space-between; /* Pour aligner le contenu à gauche et à droite */
+  align-items: center;
+  padding-right: 1px; /* Ajoutez une marge à droite souhaitée */
+}
+
+
+
+
+.toggle2:hover {
+    /*background-color: lightblue;*/
+    color: rgb(236, 13, 13);
+}
+
+#formBlock {
+  padding: 50px;
+    background-color: lightcoral;
+}
+
+#tableBlock {
+    background-color: rgb(202, 244, 202);
+}
+
+
+/* formulaire*/
+
+form,#tableBlock {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+
+    font-size: 16px;
+
+  }
+  
+  input[type="date"],input[type="time"],input[type="file"],input[type="text"],button {
+  
+    width:auto;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  button {
+    background-color: #c3c9d0;
+    color: rgb(3, 6, 30);
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #67727c;
+  }
+
+  
+  .tableauDonnees {
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-radius: 5px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    font-family: "Quicksand", sans-serif;
+
+
+    padding: 40px;
+    
+
+
+   
+   
+  }
+  
+  th {
+    background: #009578;
+    color: #de0e0e;
+  
+    font-weight:normal;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    font-weight: bold;
+    
+    
+
+    font-size: 14px;
+
+  }
+  
+  th,td {
+    padding: 8px;text-align: center;    font-size: 14px;
+
+  }
+  
+  tr:nth-child(even) {
+    background: #eeeeee;
+  }  
+
+  #affichageValeur{
+    text-align: center;
+   color: rgb(81, 81, 83);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:12px;
+    margin-top:5px;
+    margin-inline: 20px;
+  }
+
+#af{
+    text-align: center;
+   text-decoration-color: rgb(235, 8, 8);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:16px;
+    margin-top:5px;
+    margin-inline: 20px;
+  }
+
+.input{
+margin: auto;
+
+  }
+
+.table-container {
+  max-height: 480px; /* Définir la hauteur maximale pour la zone de défilement */
+  overflow: auto; /* Active le défilement si le contenu dépasse les dimensions */
+  
+  width: auto; /* Définissez la largeur souhaitée pour votre tableau */
+ 
+  
+}
+
+.table-container thead th {
+  position: sticky;
+  top: 0;
+  background-color: #fff; /* Ajouter une couleur de fond au header fixe */
+  justify-content: space-between;
+}

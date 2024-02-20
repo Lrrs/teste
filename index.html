@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <script type='text/javascript' src='jquery/jQuery v3.3.1.js'></script>
+    <script type='text/javascript' src='jquery/jquery.maskedinput.min.js'></script>
+
+
+    <link rel="stylesheet" href="flex.css">
+    <title>E-mail : lorristombozandry@gmail.com</title>
+</head>
+<body>
+    <div class="container">
+        <div class="block" id="formBlock">
+          
+            <div id="entete">
+                <p id="af">Recherche par Plage de Dates</p>
+
+                <div class="toggle1">
+                    <img class="toggle11" src="m1.png" alt="menu"/>
+            
+                </div>
+            </div>
+            <!-- Votre formulaire ici -->
+            
+            <p id="titre"></p>
+    
+            <!-- Formulaire de Recherche -->
+
+            <!-- Date Initiale -->
+            <label for="dateIni">Date Initiale:</label>
+            <input type="date" id="dateIni" required>
+
+            <input type="time" id="heureIni" required>
+            
+            <!-- Date Finale -->
+            <label for="dateFin">Date Finale:</label>
+            <input type="date" id="dateFin" required>
+
+            <input type="time" id="heureFin" required>
+
+            <div class="file_">
+            <!-- Input pour le fichier CSV -->
+            <input type="file" id="fichierCSV" accept=".csv"></div>
+            
+            <label for="dateFin">Date Finale:</label>
+
+            <input type="text" placeholder="DÃ©scription" id="champSaisie" required>
+            
+            <!-- Bouton pour Convertir CSV en JSON -->
+            <button type="button" id="importerCSV">Convertir CSV en JSON</button>
+            
+
+        </div>
+        
+        <div class="block" id="tableBlock">
+            <div id="entete">
+                <p id="affichageValeur">Pointage</p>
+
+                <div class="toggle2">
+                    <img class="toggle22" src="m1.png" alt="menu"/>
+            
+                </div>
+            </div>
+
+
+            <!-- Votre tableau ici -->
+
+            <div class="table-container">
+                <table class="table table-sm" id="tabmodel">
+           
+                <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Date</th>
+                        <th>Heure</th>
+                    </tr>
+                </thead>
+                    <tbody class="ttbody" >
+
+                    </tbody>
+                    
+            </table>
+        
+    </div>
+
+    <script src="flex.js"></script>
+</body>
+</html>
